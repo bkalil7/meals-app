@@ -33,9 +33,10 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
       ),
-      home: CategoriesScreen(),
+      //home: CategoriesScreen(),
       routes: {
-        "/category-meals": (ctx) => CategoryMealsScreen(),
+        "/": (ctx) => CategoriesScreen(),
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
       },
     );
   }
